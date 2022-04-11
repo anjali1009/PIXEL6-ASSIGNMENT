@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up to Anjali's submit form</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        
+        <form method="post" target="#" onsubmit="return validate()">
+        <h1>Sign up to Anjali's submit form</h1>
+        <p>Please enter your contact information in below fields</p>
+        
+      	Enter Your Name<br>
+      	<input type="name" minlength="4" oninput=" this.value = this.value.replace(/[!@#$%^&*()`~0-9]/g,'')" name="name">
+        <br>
+
+        Enter Your Email ID<br>
+	<input type="text" name="email"><br>
+          
+        Enter Your Phone Number<br>
+	<input class="phone" id="phone" onInput="this.value = phoneFormat(this.value)"maxlength="16"type="tel" name="Phone Number">
+  <br>
+
+       Enter OTP sent to your mobile number
+       <input type="number" id="otp-input" placeholder="e.g. 123456"/>
+      <input id="verify-submit" type="submit"/>
+        
+        <label>
+          <input type="checkbox" name="terms">By signing up to Anjali's submit form you agree to your
+           <a href="#service">Terms of Service</a> and <a href="#policy">Privacy Policy</a>
+        </label>
+            
+        
+	</form>
+</body>
+</html>
